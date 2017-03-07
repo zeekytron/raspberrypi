@@ -14,7 +14,7 @@ pinMode(led_red, "OUTPUT")
 pinMode(led_green, "OUTPUT")
 
 pinMode(button, "INPUT")
-print "whoah"
+
 while True:
     try:
         isOn = digitalRead(button)
