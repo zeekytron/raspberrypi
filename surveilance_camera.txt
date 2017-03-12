@@ -1,0 +1,45 @@
+Installing the surveilance camera
+https://www.codeproject.com/articles/665518/raspberry-pi-as-low-cost-hd-surveillance-camera
+
+
+install this package:
+    sudo apt-get install motion
+
+install these packages:
+    sudo apt-get install -y libjpeg62-turbo libjpeg62-turbo-dev libavformat56 libavformat-dev libavcodec56 libavcodec-dev libavutil54 libavutil-dev libc6-dev zlib1g-dev libmysqlclient18 libmysqlclient-dev libpq5 libpq-dev
+
+
+ 267  cd /tmp/
+  268  sudo apt-get install -y libjpeg62 libjpeg62-dev libavformat53 libavformat-dev libavcodec53 libavcodec-dev libavutil51 libavutil-dev libc6-dev zlib1g-dev libmysqlclient18 libmysqlclient-dev libpq5 libpq-dev
+  269  sudo apt-get install -y libjpeg62-turbo libjpeg62-turbo-dev libavformat53 libavformat-dev libavcodec53 libavcodec-dev libavutil51 libavutil-dev libc6-dev zlib1g-dev libmysqlclient18 libmysqlclient-dev libpq5 libpq-dev
+  270  sudo apt-get install -y libjpeg62-turbo libjpeg62-turbo-dev libavformat56 libavformat-dev libavcodec56 libavcodec-dev libavutil54 libavutil-dev libc6-dev zlib1g-dev libmysqlclient18 libmysqlclient-dev libpq5 libpq-dev
+  271  wget https://www.dropbox.com/s/xdfcxm5hu71s97d/motion-mmal.tar.gz
+  272  ls -al
+  273  tar zxvf motion-mmal.tar.gz
+  274  ls -al
+  275  less motion
+  276  less motion-mmalcam.conf
+  277  sudo mv motion /usr/bin/motion
+  278  sudo mv motion-mmalcam.conf /etc/motion.conf
+  279  sudo nano /etc/default/motion
+  280  whoami
+  281  sudo chmod 664 /etc/motion.conf
+  282  sudo chmod 755 /usr/bin/motion
+  283  sudo touch /tmp/motion.log
+  284  sudo chmod 775 /tmp/motion.log
+  285  man chmod
+  286  wget https://www.codeproject.com/KB/boards-embedded-devices/665518/raspberry_surveillance_cam_scavix.zip
+  287  ls -al
+  288  unzip raspberry_surveillance_cam_scavix.zip
+  289  man unzip
+  290  unzip -tq raspberry_surveillance_cam_scavix
+  291  open .
+  292  tar zxvf raspberry_surveillance_cam_scavix.zip
+  293  mv /home/pi/Downloads/raspberry_surveillance_cam_scavix/motion.conf /etc/motion.conf
+  294  sudo mv /home/pi/Downloads/raspberry_surveillance_cam_scavix/motion.conf /etc/motion.conf
+  295  chmod 664 /etc/motion.conf
+  296  sudo chmod 664 /etc/motion.conf
+  297  sudo reboot
+  298  history
+
+

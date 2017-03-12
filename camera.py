@@ -26,7 +26,7 @@ while counter < howLongToWait:
     try:
         if (digitalRead(button)):
             camera.capture('/home/pi/Desktop/image1.jpg')
-            print "image captured"
+                print "image captured"
             break
         counter = counter + interval
         time.sleep(interval)

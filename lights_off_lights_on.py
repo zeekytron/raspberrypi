@@ -4,9 +4,9 @@ import time
 from grovepi import *
 
 # variables to store which ports the lights/button are plugged into
-led_blue = 2
-led_red = 3
-led_green = 4
+led_blue = 0
+led_red = 2
+led_green = 3
 button = 8
 
 pinMode(led_blue, "OUTPUT")
